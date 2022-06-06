@@ -1,3 +1,3 @@
 # DataWolf
 
-[Index](src/index.md)
+[Index](notes/index.md)
