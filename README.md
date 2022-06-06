@@ -1,1 +1,3 @@
-# datawolf
+# DataWolf
+
+[Index](src/index.md)
