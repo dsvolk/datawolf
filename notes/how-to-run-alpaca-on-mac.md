@@ -1,4 +1,4 @@
-### How to Run Alpaca locally on a Mac or Linux
+# How to Run Alpaca locally on a Mac or Linux
 https://github.com/ggerganov/llama.cpp
 
 [Harb post (in Russian)](https://habr.com/ru/news/t/723638/) which motivated me to try.
