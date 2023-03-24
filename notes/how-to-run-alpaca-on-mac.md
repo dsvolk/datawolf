@@ -1,7 +1,5 @@
 # How to Run Alpaca locally on a Mac or Linux
-https://github.com/ggerganov/llama.cpp
-
-[Habr post (in Russian)](https://habr.com/ru/news/t/723638/) which motivated me to try.
+[Habr post (in Russian)](https://habr.com/ru/news/t/723638/) which motivated me to try this. Check it out for extra references and useful links.
 
 Install `git lfs` (Large File Storage) (see also https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage):
 ```
@@ -11,14 +9,14 @@ git lfs install
 Create a parent directory for the experiment:
 ```
 mkdir alpaca
+cd alpaca
 ```
-Download the model weights in ggml format (4bits):
-7B version (~4.2Gb file, requires 4.3GB RAM to run):
+Download the model weights in ggml format (4 bits):
+- 7B version (~4.2Gb file, requires 4.3GB RAM to run):
 ```
 git clone https://huggingface.co/Pi3141/alpaca-7B-ggml
 ```
-
-30B version (~20GB file, requires 20+GB RAM to run):
+- 30B version (~20GB file, requires 20+GB RAM to run):
 ```
 git clone https://huggingface.co/Pi3141/alpaca-30B-ggml
 ```
@@ -31,8 +29,16 @@ git clone https://github.com/ggerganov/llama.cpp
 cd llama.cpp
 make
 ```
-Run the model:
+Run the 7B model in the dialog mode:
 ```
-./chat -m ../alpaca-30B-ggml/ggml-model-q4_0.bin -n 128
+./chat -m ../alpaca-7B-ggml/ggml-model-q4_0.bin
+```
+Run the 7B model in the CLI mode with the prompt="Tell me about alpacas":
+```
+./chat -m ../alpaca-7B-ggml/ggml-model-q4_0.bin -p "Tell me about alpacas"
+```
+Get help on available parameters:
+```
+./chat -h
 ```
 Enjoy!
