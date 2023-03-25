@@ -1,4 +1,4 @@
-# How to Run Alpaca locally on a Mac or Linux
+# How to run Alpaca model locally on a Mac or Linux
 [Habr post (in Russian)](https://habr.com/ru/news/t/723638/) which motivated me to try this. Check it out for extra references and useful links.
 
 Install `git lfs` (Large File Storage) (see also https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage):
