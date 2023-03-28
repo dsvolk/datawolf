@@ -31,16 +31,16 @@ make
 ```
 Run the 7B model in the dialog mode:
 ```
-./chat -m ../alpaca-7B-ggml/ggml-model-q4_0.bin
+./main -m ../alpaca-7B-ggml/ggml-model-q4_0.bin
 ```
 Run the 7B model in the CLI mode with the prompt="Tell me about alpacas":
 ```
-./chat -m ../alpaca-7B-ggml/ggml-model-q4_0.bin -p "Tell me about alpacas"
+./main -m ../alpaca-7B-ggml/ggml-model-q4_0.bin -p "Tell me about alpacas"
 ```
 Replace `alpaca-7B-ggml` with `alpaca-30B-ggml` to run the 30B model. The inference is way slower, though.
 
 Get help on available parameters:
 ```
-./chat -h
+./main -h
 ```
 Enjoy!
